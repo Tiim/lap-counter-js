@@ -1,0 +1,20 @@
+@startuml Use Cases Overview
+left to right direction
+
+actor "Timekeeper" as timekeeper
+
+rectangle "Lap Counter" {
+    usecase "UC-001\nPrepare Session" as UC001
+    usecase "UC-002\nRun Session Clock" as UC002
+    usecase "UC-003\nCount Laps" as UC003
+    usecase "UC-004\nExport Results" as UC004
+    usecase "UC-005\nReset Session" as UC005
+}
+
+timekeeper --> UC001
+timekeeper --> UC002
+timekeeper --> UC003
+timekeeper --> UC004
+timekeeper --> UC005
+
+@enduml
